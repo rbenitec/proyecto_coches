@@ -78,7 +78,7 @@ public class UserService {
      */
 
     public List<Bike> getBikesByUserId(int userId){
-        List<Bike> bikes = restTemplateConfig.restTemplate().getForObject("http://localhost:8003/bike/byuser/"+userId, List.class);
+        List<Bike> bikes = restTemplateConfig.restTemplate().getForObject("http://bike-service/bike/byuser/"+userId, List.class);
         return bikes;
     }
 
@@ -88,7 +88,7 @@ public class UserService {
      */
 
     public List<Car> getCarsByUserId(int userId){
-        List<Car> cars = restTemplateConfig.restTemplate().getForObject("http://localhost:8003/car/byuser/"+userId, List.class);
+        List<Car> cars = restTemplateConfig.restTemplate().getForObject("http://car-service/car/byuser/"+userId, List.class);
         return cars;
     }
 

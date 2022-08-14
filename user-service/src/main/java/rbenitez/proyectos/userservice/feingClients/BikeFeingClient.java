@@ -10,7 +10,7 @@ import java.util.List;
 *   put the service name of your microservice and your url, in @FeingClient
 *   in RequestMapping, put the name of direction controller.
  */
-@FeignClient(name = "bike-service", url = "http://localhost:8003/bike")
+@FeignClient(name = "bike-service", path = "/bike")
 public interface BikeFeingClient {
 
     /*

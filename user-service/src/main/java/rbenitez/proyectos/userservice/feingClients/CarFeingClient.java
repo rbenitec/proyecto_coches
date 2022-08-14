@@ -6,7 +6,7 @@ import rbenitez.proyectos.userservice.model.Car;
 
 import java.util.List;
 
-@FeignClient(name = "car-service", url = "http://localhost:8002/car")
+@FeignClient(name = "car-service", path = "/car")
 public interface CarFeingClient {
 
     /*
